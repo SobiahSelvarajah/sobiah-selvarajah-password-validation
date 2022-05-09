@@ -1,10 +1,10 @@
 import re
 
-reg = r"(^(?=.*[*.!@$%#]).{8,})"
+reg = r"[a-zA-Z0-9$%#@]{8,}\d$"
 
 pattern = re.compile(reg)
 
-password = 'hj@khjs8746382gjh'
+password = 'hj3@khjsgjhhhjdg6'
 
 res = pattern.search(password)
 print(res)
